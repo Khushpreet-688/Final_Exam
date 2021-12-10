@@ -211,6 +211,7 @@ input[type=text]:focus {
   }
   .message > textarea{
     min-width: 45rem;
+    min-height: 20rem;
   } 
   .contact{
     display: flex;
