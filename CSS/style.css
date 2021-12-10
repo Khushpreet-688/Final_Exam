@@ -197,3 +197,28 @@ input[type=text]:focus {
  color: var(--white);
 }
 
+@media all and (max-width: 600px) {
+  section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+
+  .myform{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .message > textarea{
+    min-width: none;
+  }
+
+  
+}
