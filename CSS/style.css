@@ -198,11 +198,6 @@ input[type=text]:focus {
 }
 
 @media all and (max-width: 600px) {
-  section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 
   h1{
     font-size: 3rem;
@@ -210,15 +205,27 @@ input[type=text]:focus {
   h2{
     font-size: 3rem;
   }
-
-  .myform{
+  .myForm{
+    display: flex;
+    flex-direction: column;
+  }
+  .message > textarea{
+    min-width: 45rem;
+  } 
+  .contact{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .message > textarea{
-    min-width: none;
+  .message {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+  .contact {
+    flex: 1; 
+    order: 2;
+    margin-right: 2em; 
   }
 
-  
 }
